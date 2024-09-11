@@ -9,10 +9,21 @@ const drugs = new Map([
     img:'./img/epzicom.jpg'
    }],
 
-   ['acetylcysteine', {
-    definition: 'acetadote(injection)/generics(oral)',
+   ['acetodote', {
+    definition: 'acetylcysteine',
     img:'./img/Acetylcysteine.jpg'
+   }],
+
+   ['zovirax', {
+    definition: 'acyclovir',
+    img:'./img/zovirax.jpg'
+   }],
+
+   ['differin', {
+    definition: 'adapalene',
+    img:'./img/differin.jpg'
    }]
+
 
 ])
 // Get the dropdown element
@@ -32,6 +43,7 @@ sortedDrugs.forEach((key) => {
 // Event listener for dropdown selection
 drugSelect.addEventListener('change', () => {
     const selectedDrug = drugSelect.value;
+    input.value = '';
     searchDrugs(selectedDrug);
 });
 const input = document.getElementById('input')

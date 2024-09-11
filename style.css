@@ -29,6 +29,7 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  font-size: larger;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -79,6 +80,7 @@ textarea:not([rows]) {
     height: 60vh;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 img {
